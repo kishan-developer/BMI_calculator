@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">              
+      <title>BMI calculator</title>
+
+      <style>
+
+            body{
+                  background-color: #212121;
+                  color: #22f517;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 20px;
+            }
+
+            .cantainer {
+                  border: 1px solid white;
+                  padding: 30px;
+                  border-radius: 10px;
+                  box-shadow: 20px 10px  50px rgb(89, 245, 54);
+            }
+
+            form{
+                  font-size: 1.5rem;
+                  text-align: center;
+            }
+            
+            input {
+                  font-size: 1rem;
+                  padding: 5px 20px 5px 20px;
+                  border-radius: 5px;
+                  /* background-color: black; */
+                  color: #22f517;
+                  border: none;
+                  outline: none;
+                  /* border-bottom: 1px solid rgb(15, 240, 18); */
+                  
+            }
+
+            input[type="text"], textarea {
+
+                  background-color : #060606; 
+
+            }
+
+            button {
+                  margin-top: 20px;
+                  /* margin-left: 200px; */
+                  font-size: 1.5rem;
+                  border-radius: 5px;
+                  padding: 5px 20px 5px 20px;
+            }
+
+            #results {
+                  margin-top: 10px;
+                  font-size: 2rem;
+                  font-weight: bold;
+                  /* color: green; */
+                  border-bottom: 2px dotted green;
+                  padding: 5px 20px 5px 20px;
+                  
+            }
+            
+      </style>
+
+</head>
+<body>
+      
+      <div class="cantainer">
+            <h1>BMI calculator</h1>
+            <hr>
+            <br>
+
+            <form action="">
+                  <p><label>Height in CM : </label><input type="text" id="height" placeholder="Enter Your Height in CM"></p>
+                  <p><label>Weight in KG : </label><input type="text" id="weight" placeholder="Enter Your Weight in KG"></p>
+
+                  <button type="submit">Calculator</button> <button type="reset" >Reset Form</button>
+                  <div id="results">Result</div>
+                  
+                  <div id="weight-guide">
+                        <h3>BMI Weight Guide</h3>
+                        <p>Under Weight = less than 18.6</p>
+                        <p>Normal Range = 18.6 and 24.9</p>
+                        <p>OverWeight = Greater than 24.9</p>
+                  </div>
+            </form>
+
+           
+
+      </div>
+
+      <script src="script.js"> </script>
+</body>
+</html>
